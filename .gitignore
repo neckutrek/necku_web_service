@@ -1,5 +1,5 @@
-java_wev_service/.idea/**/*
-java_wev_service/target/**/*
+java_web_service/.idea/**/*
+java_web_service/target/**/*
 
 cpp_lib/cmake-build-release/**/*
 cpp_lib/conaninfo.txt
