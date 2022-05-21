@@ -1,3 +1,6 @@
+java_wev_service/.idea/**/*
+java_wev_service/target/**/*
+
 cpp_lib/cmake-build-release/**/*
 cpp_lib/conaninfo.txt
 cpp_lib/conanbuildinfo.txt
