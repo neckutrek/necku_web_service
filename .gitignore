@@ -1,1 +1,5 @@
 cpp_lib/cmake-build-release/**/*
+cpp_lib/conaninfo.txt
+cpp_lib/conanbuildinfo.txt
+cpp_lib/conan.lock
+cpp_lib/graph_info.json
