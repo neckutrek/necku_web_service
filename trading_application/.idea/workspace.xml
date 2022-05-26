@@ -48,23 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/git/necku_web_service/java_web_service",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/git/necku_web_service/java_web_service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="java_web_service" type="Application" factoryName="Application">
+    <configuration name="trading_application" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <envs>
         <env name="LD_LIBRARY_PATH" value="${LD_LIBRARY_PATH}:$PROJECT_DIR$/../market_connection/lib/" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="trading.RandomWebService" />
-      <module name="demo" />
+      <option name="MAIN_CLASS_NAME" value="trading.TradingApplication" />
+      <module name="trading_application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
