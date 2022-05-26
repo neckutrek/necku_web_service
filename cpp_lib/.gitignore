@@ -1,0 +1,10 @@
+conaninfo.txt
+conanbuildinfo.txt
+conan.lock
+graph_info.json
+
+cmake-build-release/**/*
+cmake-build-debug/**/*
+build/**/*
+lib/**/*
+
