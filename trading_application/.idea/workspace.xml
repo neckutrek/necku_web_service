@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80557ece-52e5-4971-a3d7-9f68ec346be3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/trading/MarketChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/trading/MarketChannelImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../market_connection/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../market_connection/include/trading_MarketChannelImpl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../market_connection/src/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../market_connection/src/trading_MarketChannelImpl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/cpp_lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/cpp_lib.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/conanfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/conanfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/include/demo_NativeInterface.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/src/demo_NativeInterface.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/test_package/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test_package/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/test_package/conanfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test_package/conanfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cpp_lib/test_package/src/example.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test_package/src/example.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../market_connection/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../market_connection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/NativeInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/RandomWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trading/RandomWebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/WebServiceRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trading/WebServiceRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +29,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/git/necku_web_service/java_web_service&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/git/necku_web_service/trading_application&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -82,5 +60,16 @@
       <updated>1653466468411</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
