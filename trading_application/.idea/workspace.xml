@@ -7,6 +7,9 @@
     <list default="true" id="80557ece-52e5-4971-a3d7-9f68ec346be3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../market_connection/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../market_connection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../market_connection/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../market_connection/test/conanfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test/conanfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../market_connection/test/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../market_connection/test/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

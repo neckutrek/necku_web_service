@@ -59,11 +59,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="market_connection" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="market_connection" TARGET_NAME="market_connection" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -81,7 +76,8 @@
       <workItem from="1653467816132" duration="327000" />
       <workItem from="1653468343870" duration="3108000" />
       <workItem from="1653597543694" duration="106000" />
-      <workItem from="1653775446227" duration="163000" />
+      <workItem from="1653775446227" duration="767000" />
+      <workItem from="1653845397951" duration="2067000" />
     </task>
     <servers />
   </component>

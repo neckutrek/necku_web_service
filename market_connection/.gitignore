@@ -14,4 +14,6 @@ lib/**/*
 test/build/**/*
 test/cmake-build-debug/**/*
 test/cmake-build-release/**/*
+test/bin/**/*
+test/.cache/**/*
 

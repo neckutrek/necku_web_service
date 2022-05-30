@@ -15,6 +15,7 @@ class MarketConnectionTestsConan(ConanFile):
     def requirements(self):
         self.requires("market_connection/0.1")
         self.requires("catch2/2.13.9")
+        self.requires("openssl/3.0.3")
 
     def generate(self):
         deps = CMakeDeps(self)
