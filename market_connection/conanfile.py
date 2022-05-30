@@ -1,17 +1,16 @@
 from conan import ConanFile
-from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout
+from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
-
-class CppLibConan(ConanFile):
-    name = "cpp_lib"
+class MarketConnectionConan(ConanFile):
+    name = "market_connection"
     version = "0.1"
 
     # Optional metadata
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of CppLib here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    license = "GPL-3"
+    author = "Marcus Johansson <>"
+    url = "https://github.org/neckutrek/necku_web_service"
+    description = "A C++/Java trading application just for fun"
+    topics = ("c++","java","trading","boost","websockets")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
@@ -29,6 +28,8 @@ class CppLibConan(ConanFile):
         cmake_layout(self)
 
     def generate(self):
+        deps = CMakeDeps(self)
+        deps.generate()
         tc = CMakeToolchain(self)
         tc.generate()
 
@@ -42,4 +43,5 @@ class CppLibConan(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["cpp_lib"]
+        self.cpp_info.libs = ["market_connection"]
+
