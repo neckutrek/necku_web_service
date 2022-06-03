@@ -8,8 +8,10 @@ compile_commands.json
 cmake-build-release/**/*
 cmake-build-debug/**/*
 build/**/*
+Debug/**/*
 lib/**/*
 .cache/**/*
+.idea/workspace.xml
 
 test/build/**/*
 test/cmake-build-debug/**/*
