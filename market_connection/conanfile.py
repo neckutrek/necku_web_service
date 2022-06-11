@@ -17,12 +17,17 @@ class MarketConnectionConan(ConanFile):
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
 
-    # Sources are located in the same place as this recipe, copy them to the recipe
+    # Sources are located in the same place as this recipe, copy them to the ecipe
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
 
     def config_options(self):
         if self.settings.os == "Windows":
             del self.options.fPIC
+
+    def requirements(self):
+        self.requires("openssl/3.0.3")
+        self.requires("openjdk/16.0.1")
+        self.requires("boost/1.79.0")
 
     def layout(self):
         cmake_layout(self)
