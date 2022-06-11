@@ -4,6 +4,7 @@ conan.lock
 graph_info.json
 CMakeUserPresets.json
 compile_commands.json
+CMakeCache.txt
 
 cmake-build-release/**/*
 cmake-build-debug/**/*

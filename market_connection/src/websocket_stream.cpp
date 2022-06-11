@@ -53,6 +53,7 @@ namespace twelvedata {
 namespace websocket {
 
 namespace websocket = boost::beast::websocket;
+namespace m {}
 
 void connect() {
 
