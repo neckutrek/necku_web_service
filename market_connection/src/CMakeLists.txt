@@ -1,6 +1,6 @@
 set(LIBNAME "market_connection")
-set(HEADERS "include/trading_MarketChannelImpl.h")
-set(SOURCES "trading_MarketChannelImpl.cpp")
+set(HEADERS include/trading_MarketChannelImpl.h websocket_stream.h)
+set(SOURCES trading_MarketChannelImpl.cpp websocket_stream.cpp)
 
 add_library(${LIBNAME} SHARED ${SOURCES})
 
@@ -11,7 +11,7 @@ target_include_directories(${LIBNAME} PUBLIC include ${OPENSSL_INCLUDE_DIR})
 
 target_link_libraries(${LIBNAME} ${OPENSSL_LIBRARIES})
 
-set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER ${PROJECT_SOURCE_DIR}/${HEADERS})
+set_target_properties(${LIBNAME} PROPERTIES PUBLIC_HEADER "${PROJECT_SOURCE_DIR}/${HEADERS}")
 install(
   TARGETS ${LIBNAME}
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
