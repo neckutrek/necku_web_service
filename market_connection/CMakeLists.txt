@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 project(market_connection CXX)
 
 find_package(JNI 1.8 REQUIRED)
-find_package(Boost REQUIRED COMPONENTS asio beast)
+find_package(Boost REQUIRED)
 find_package(OpenSSL REQUIRED)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
