@@ -1,5 +1,5 @@
 set(LIBNAME "market_connection")
-set(SOURCES trading_MarketChannelImpl.cpp websocket_stream.cpp)
+set(SOURCES trading_MarketChannelImpl.cpp websocket_stream.cpp rest_requests.cpp)
 
 add_library(${LIBNAME} SHARED ${SOURCES})
 
@@ -10,6 +10,7 @@ target_include_directories(${LIBNAME} PUBLIC ${Boost_INCLUDE_DIRS})
 
 target_link_libraries(${LIBNAME} OpenSSL::SSL)
 target_link_libraries(${LIBNAME} OpenSSL::Crypto)
+target_link_libraries(${LIBNAME} Boost::json)
 
 install(
   TARGETS ${LIBNAME}

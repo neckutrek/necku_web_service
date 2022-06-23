@@ -36,6 +36,7 @@ class MarketConnectionConan(ConanFile):
         deps = CMakeDeps(self)
         deps.generate()
         tc = CMakeToolchain(self)
+        tc.variables["BOOST_ROOT"] = self.deps_cpp_info["boost"].rootpath
         tc.generate()
 
     def build(self):

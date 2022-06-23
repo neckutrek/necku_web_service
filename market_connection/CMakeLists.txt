@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.8)
 project(market_connection CXX)
 
 find_package(JNI 1.8 REQUIRED)
-find_package(Boost REQUIRED)
 find_package(OpenSSL REQUIRED)
+find_package(Boost REQUIRED)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CXX_STANDARD "C++17")
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_VERBOSE_MAKEFILE True)
 set(CMAKE_COLOR_MAKEFILE ON)
 

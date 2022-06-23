@@ -36,7 +36,8 @@ class MarketConnectionTestsConan(ConanFile):
         cmake.install()
 
     def test(self):
-        if not cross_building(self):
-            cmd = os.path.join(self.cpp.build.bindirs[0], "tests")
-            self.run(cmd, env="conanrun")
+        pass
+    #    if not cross_building(self):
+    #        cmd = os.path.join(self.cpp.build.bindirs[0], "test")
+    #        self.run(cmd, env="conanrun")
 

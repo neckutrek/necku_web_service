@@ -1,5 +1,5 @@
-#ifndef NATIVE_WEBSOCKET_STREAM_H
-#define NATIVE_WEBSOCKET_STREAM_H
+#ifndef TWELVEDATA_WEBSOCKET_STREAM_H
+#define TWELVEDATA_WEBSOCKET_STREAM_H
 
 namespace twelvedata {
 namespace websocket {
