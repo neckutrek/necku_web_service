@@ -1,5 +1,10 @@
 set(LIBNAME "market_connection")
-set(SOURCES trading_MarketChannelImpl.cpp websocket_stream.cpp rest_requests.cpp)
+set(SOURCES
+    trading_MarketChannelImpl.cpp
+    websocket_stream.cpp
+    rest_requests.cpp
+    io_context.cpp
+    generic_rest_request.cpp)
 
 add_library(${LIBNAME} SHARED ${SOURCES})
 
