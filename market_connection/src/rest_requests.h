@@ -23,16 +23,16 @@ void
 run_all();
 
 /**
- * @brief Get the stocks list object
- * 
- * @param request 
- * @param apikey 
- * @return GetStocksListResponse 
+ *
+ * @param request
+ * @param apikey
+ * @return
  */
+extern
 GetStocksListResponse
 get_stocks_list(
-    const GetStocksListRequest &request,
-    const std::string &apikey);
+    const GetStocksListRequest& request,
+    const std::string& apikey);
 
 /**
  * @brief 
@@ -55,3 +55,4 @@ async_get_stocks_list(
 #include "rest_requests.hpp"
 
 #endif //TWELVEDATA_REST_REQUESTS_H
+

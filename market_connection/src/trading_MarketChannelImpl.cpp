@@ -10,6 +10,25 @@
 
 using namespace twelvedata::rest;
 
+template <typename T, const char* Name>
+std::ostream& operator<<(std::ostream& os, const twelvedata::rest::fields::RequestField<T, Name>& field)
+{
+  os << field.name << ": " << field.value.value() << std::endl;
+  return os;
+}
+
+template <typename... Args>
+std::ostream& operator<<(std::ostream& os, const std::tuple<Args...>& args)
+{
+  auto print = [&os](auto& arg){
+    os << arg << ' ';
+  };
+  std::apply(
+      [&print](auto&... as){ twelvedata::utilities::for_each_argument(print, as...); },
+      args);
+  return os;
+}
+
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
 {
@@ -20,23 +39,24 @@ std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
   return os;
 }
 
-
 void sync_request(const std::string& apikey)
 {
   GetStocksListRequest req;
-  req.symbol = "AAPL";
+  get<fields::Symbol>(req).value = "AAPL";
   auto response = get_stocks_list(req, apikey);
-  std::cout << response.status << std::endl;
+  std::cout << "sync: " << response.status << " : " << response.data.size() << std::endl;
+  std::cout << response.data << std::endl;
 }
 
 void async_request(const std::string& apikey)
 {
-  auto req2 = std::make_unique<GetStocksListRequest>();
-  req2->symbol = "AAPL";
+  auto req = std::make_unique<GetStocksListRequest>();
+  get<fields::Symbol>(*req).value = "AAPL";
   auto completion = [](std::unique_ptr<GetStocksListResponse> response){
-    std::cout << response->status << " : " << response->data.size() << std::endl;
+    std::cout << "async: " << response->status << " : " << response->data.size() << std::endl;
+    std::cout << response->data << std::endl;
   };
-  async_get_stocks_list(std::move(req2), apikey, completion);
+  async_get_stocks_list(std::move(req), apikey, completion);
   run_all();
 }
 
@@ -48,7 +68,7 @@ JNIEXPORT void JNICALL Java_trading_MarketChannelImpl_connect(
 
   std::string apikey = "9a64360d06384744b56e618f1fc58b03";
 
-  //sync_request(apikey);
+  sync_request(apikey);
   std::cout << "- - - - -" << std::endl;
   async_request(apikey);
 }

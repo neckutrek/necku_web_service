@@ -23,6 +23,17 @@ handle_error(const boost::system::error_code &ec, const std::string &msg)
   }
 }
 
+template <class F, class... Args>
+constexpr void for_each_argument(F&& f, Args&&... args)
+{
+  [](...){}((f(std::forward<Args>(args)), 0)...);
+}
+
+constexpr bool streq(const char* s1, const char* s2)
+{
+  return std::string_view(s1) == s2;
+};
+
 }
 }
 
