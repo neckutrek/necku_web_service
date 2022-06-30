@@ -1,3 +1,3 @@
 #!/bin/bash
-docker kill trading_application && docker rm trading_application
+docker kill ctr_trading_application && docker rm ctr_trading_application
 
